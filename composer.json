@@ -1,0 +1,17 @@
+{
+    "name": "pierre/php-avance",
+    "type": "training",
+    "license": "Beerware",
+    "authors": [
+        {
+            "name": "Pierre Bretéché",
+            "email": "pbreteche@dawan.fr"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "minimalMVC\\": "01minimalMVC/"
+        }
+    }
+}
