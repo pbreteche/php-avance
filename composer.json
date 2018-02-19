@@ -1,5 +1,6 @@
 {
     "name": "pierre/php-avance",
+    "description": "Training session about PHP OOP",
     "type": "training",
     "license": "Beerware",
     "authors": [
