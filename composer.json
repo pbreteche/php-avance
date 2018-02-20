@@ -15,7 +15,8 @@
             "minimalMVC\\":     "01minimalMVC/",
             "instantiation\\":  "02instantiation/",
             "structural\\":     "03structural/",
-            "behavior\\":     "04behavior/"
+            "behavior\\":     "04behavior/",
+            "di\\":     "05di/"
         }
     }
 }
