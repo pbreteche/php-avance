@@ -10,6 +10,8 @@
         }
     ],
     "require": {
+        "php": "^7.1",
+        "ext-soap": "*",
         "spipu/html2pdf": "^5.1"
     },
     "autoload": {

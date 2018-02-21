@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c35980220b84a3588d3346301037e1de",
+    "content-hash": "1e76a8047d231099126dd49422e87fe6",
     "packages": [
         {
             "name": "spipu/html2pdf",
@@ -128,6 +128,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7.1",
+        "ext-soap": "*"
+    },
     "platform-dev": []
 }
