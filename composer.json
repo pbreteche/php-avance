@@ -9,14 +9,17 @@
             "email": "pbreteche@dawan.fr"
         }
     ],
-    "require": {},
+    "require": {
+        "spipu/html2pdf": "^5.1"
+    },
     "autoload": {
         "psr-4": {
             "minimalMVC\\":     "01minimalMVC/",
             "instantiation\\":  "02instantiation/",
             "structural\\":     "03structural/",
-            "behavior\\":     "04behavior/",
-            "di\\":     "05di/"
+            "behavior\\":       "04behavior/",
+            "di\\":             "05di/",
+            "pdf\\":            "06html2pdf/"
         }
     }
 }
