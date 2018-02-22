@@ -8,6 +8,11 @@ class ArithmeticCalculator
 
     public function add($a, $b)
     {
-        return 7;
+        return $a + $b;
+    }
+
+    public function product($a, $b)
+    {
+        return $a * $b;
     }
 }

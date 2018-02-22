@@ -6,12 +6,51 @@ use test\ArithmeticCalculator;
 class ArithmeticCalculatorTest extends TestCase
 {
 
-    public function testAdd()
+    /**
+     * @var ArithmeticCalculator
+     */
+    private $calculator;
+
+    /**
+     * @before
+     */
+    public function setUpCalculator()
     {
-        $calculator = new ArithmeticCalculator();
+        $this->calculator = new ArithmeticCalculator();
+    }
 
-        $result = $calculator->add(3, 4);
+    /*
+     * commentaire normal
+     */
+    /**
+     * @param $a
+     * @param $b
+     * @param $expected
+     *
+     * @dataProvider provideAdd
+     */
+    public function testAdd($a, $b, $expected)
+    {
+        $result = $this->calculator->add($a, $b);
 
-        $this->assertEquals(7, $result, 'La somme de 3 et 4 doit faire 7');
+        $this->assertEquals($expected, $result, 'La somme de '. $a.' et '.$b.' doit faire '.$expected);
+    }
+
+    public function testProduct()
+    {
+        $result = $this->calculator->product(3, 4);
+
+        $this->assertEquals(12, $result, 'Le produit de 3 et 4 doit faire 12');
+    }
+
+    public function provideAdd()
+    {
+        return [
+            [3, 4, 7],
+            [12, 30, 42],
+            [12, 30, 42],
+            [12, 30, 42],
+            [12, 30, 42],
+        ];
     }
 }
