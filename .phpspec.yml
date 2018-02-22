@@ -1,0 +1,6 @@
+suites:
+    formation_suite:
+        namespace: test
+        src_path: 10test/src
+        spec_path: 10test
+        psr4_prefix: test
